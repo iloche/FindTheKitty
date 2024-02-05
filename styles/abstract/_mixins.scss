@@ -1,0 +1,9 @@
+@mixin transition ($duration : .3s, $effect : ease-in-out){
+    transition: $duration all $effect;
+}
+@mixin absmiddle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50% 0;
+}
