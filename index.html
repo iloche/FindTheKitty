@@ -7,19 +7,26 @@
     <title>Exercice - Trouve le chat ! </title>
 </head>
 <body>
-    <h1>Où est passé le chat ?!</h1>
-    <div class="wrapper scene">
+    <h1>Où est passé le chat ?! 🔍</h1>
+
+<div class="game-container">
+    <div class="scene">
+        <div id="overlay"></div>
         <div class="direction-box">
-            <button class="top-way allButtons">Aller en haut</button>
-            <button class="left-way allButtons">Aller à gauche</button>
-            <button class="right-way allButtons">Aller à droite</button>
-            <img src="" alt="">
-        </div>
-        <div class="txt-box">
-            <p class="dialogue">Bonjour, j'ai perdu mon chat, aidez-moi à le retrouver !</p>
-            <button class="next-dialogue">Oh, pauvre chou, allons-y !</button>
+            <button class="top-way btn-dir">Aller en haut</button>
+            <button class="left-way btn-dir">Aller à gauche</button>
+            <button class="right-way btn-dir">Aller à droite</button>
         </div>
     </div>
-    <script src="scripts/main.js"></script>
+
+    <div class="txt-box">
+        <p id="dialogue">Le petit chat s'est perdu dans la forêt...</p>
+        <button id="start-btn">Chercher le chat !</button>
+    </div>
+</div>
+
+<audio id="typeSound" src="https://assets.mixkit.co/active_storage/sfx/2358/2358-preview.mp3"></audio>
+<audio id="meowSound" src="https://assets.mixkit.co/active_storage/sfx/1363/1363-preview.mp3"></audio>
+<script src="scripts/main.js"></script>
 </body>
 </html>
